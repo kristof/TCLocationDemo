@@ -31,6 +31,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.backgroundColor = [UIColor clearColor];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -119,12 +120,13 @@
                                                                 [locationDict setObject:note.title forKey:@"Title"];
                                                                 [locationDict setObject:note.attributes.latitude forKey:@"Latitude"];
                                                                 [locationDict setObject:note.attributes.longitude forKey:@"Longitude"];
+                                                                [locationDict setObject:note.created forKey:@"Created"];
                                                                 [self.locations addObject:locationDict];
                                                                 
                                                                 if (findNotesResults.count == self.locations.count) {
                                                                     NSLog(@"%@", self.locations);
                                                                     
-                                                                    NSSortDescriptor *sortDes = [[NSSortDescriptor alloc] initWithKey:@"Title" ascending:YES];
+                                                                    NSSortDescriptor *sortDes = [[NSSortDescriptor alloc] initWithKey:@"Created" ascending:NO];
                                                                     [self.locations sortUsingDescriptors:[NSArray arrayWithObject:sortDes]];
                                                                     
                                                                     //[self setupLocationManager];

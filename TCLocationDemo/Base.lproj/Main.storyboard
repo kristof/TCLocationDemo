@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="940" y="136"/>
         </scene>
-        <!--Map View-->
+        <!--Trip to London-->
         <scene sceneID="JDe-Ft-cat">
             <objects>
                 <viewController id="RxG-d9-dGP" customClass="MapViewController" sceneMemberID="viewController">
@@ -77,7 +77,11 @@
                             <constraint firstItem="3BA-Xy-oSi" firstAttribute="top" secondItem="9hn-Ku-paZ" secondAttribute="bottom" id="Xxt-dH-H4k"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map View" id="jQ4-M3-yi8"/>
+                    <navigationItem key="navigationItem" title="Trip to London" id="jQ4-M3-yi8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="CDK-QP-emi">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="3BA-Xy-oSi" id="5WW-oy-lUt"/>
                     </connections>
@@ -102,8 +106,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationTableViewCell" rowHeight="80" id="CbR-3N-UJA" customClass="LocationTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LocationTableViewCell" rowHeight="80" id="CbR-3N-UJA" customClass="LocationTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CbR-3N-UJA" id="re6-Gi-9XF">
@@ -112,12 +117,12 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDI-XF-bN4">
                                                     <rect key="frame" x="15" y="26" width="573" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3h-DN-OVX">
                                                     <rect key="frame" x="0.0" y="79" width="600" height="1"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="eqK-nD-qAo"/>
                                                     </constraints>
@@ -132,6 +137,8 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="r3h-DN-OVX" secondAttribute="trailing" constant="-8" id="v1E-dL-syS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.2117647231" green="0.73725491759999995" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="uDI-XF-bN4" id="f19-SO-vy7"/>
@@ -144,7 +151,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="37m-JF-xln" secondAttribute="bottom" id="1n2-6d-mC1"/>
                             <constraint firstItem="37m-JF-xln" firstAttribute="top" secondItem="UGp-1a-NnX" secondAttribute="bottom" id="Dcf-2z-jpU"/>
@@ -152,7 +159,7 @@
                             <constraint firstItem="37m-JF-xln" firstAttribute="leading" secondItem="PNj-re-zCk" secondAttribute="leading" id="tRg-pZ-lOT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="List View" id="Zjz-4c-wOK"/>
+                    <navigationItem key="navigationItem" title="Trip to London" id="Zjz-4c-wOK"/>
                     <connections>
                         <outlet property="tableView" destination="37m-JF-xln" id="JFD-lt-L7a"/>
                     </connections>
@@ -208,7 +215,10 @@
         <scene sceneID="xio-fH-fIC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uxz-A9-xuz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="h6h-YY-R3c"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="h6h-YY-R3c">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="15"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="r7S-qC-mwR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -231,9 +241,12 @@
         <scene sceneID="ZSl-HP-h7J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gqG-Hs-MPw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" id="Vfc-hM-J1x"/>
+                    <tabBarItem key="tabBarItem" title="List" image="feed" id="Vfc-hM-J1x">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="15"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="g4I-DW-eyp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="g4I-DW-eyp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.1215686275" green="0.14901960780000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -251,4 +264,7 @@
             <point key="canvasLocation" x="2526" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="feed" width="23" height="16"/>
+    </resources>
 </document>

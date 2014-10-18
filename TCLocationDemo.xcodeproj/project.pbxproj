@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F05DAB519F30884005282B2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F05DAB419F30884005282B2 /* MapViewController.m */; };
+		0F05DAB819F308B8005282B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F05DAB719F308B8005282B2 /* MapKit.framework */; };
 		0F398A9F19F2A6CD00F49389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398A9E19F2A6CD00F49389 /* main.m */; };
 		0F398AA219F2A6CD00F49389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AA119F2A6CD00F49389 /* AppDelegate.m */; };
-		0F398AA519F2A6CD00F49389 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AA419F2A6CD00F49389 /* ViewController.m */; };
 		0F398AA819F2A6CD00F49389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F398AA619F2A6CD00F49389 /* Main.storyboard */; };
 		0F398AAA19F2A6CD00F49389 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F398AA919F2A6CD00F49389 /* Images.xcassets */; };
 		0F398AAD19F2A6CD00F49389 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F398AAB19F2A6CD00F49389 /* LaunchScreen.xib */; };
 		0F398AB919F2A6CD00F49389 /* TCLocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AB819F2A6CD00F49389 /* TCLocationDemoTests.m */; };
+		0F398AC919F2A9A200F49389 /* ENSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F398AC719F2A9A200F49389 /* ENSDK.framework */; };
+		0F398ACA19F2A9A200F49389 /* ENSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0F398AC819F2A9A200F49389 /* ENSDKResources.bundle */; };
+		0F398ACC19F2A9BC00F49389 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F398ACB19F2A9BC00F49389 /* MobileCoreServices.framework */; };
+		0F398ACE19F2AA4800F49389 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F398ACD19F2AA4800F49389 /* libxml2.dylib */; };
+		0F398AD119F2AF1A00F49389 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AD019F2AF1A00F49389 /* LoginViewController.m */; };
+		0F398AD819F2B67600F49389 /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AD719F2B67600F49389 /* TripViewController.m */; };
+		0F398ADC19F2CCBD00F49389 /* LocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */; };
+		0F398ADF19F2E7E000F49389 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F398ADE19F2E7E000F49389 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +36,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F05DAB319F30884005282B2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Map/MapViewController.h; sourceTree = "<group>"; };
+		0F05DAB419F30884005282B2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Map/MapViewController.m; sourceTree = "<group>"; };
+		0F05DAB719F308B8005282B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0F398A9919F2A6CD00F49389 /* TCLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F398A9D19F2A6CD00F49389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F398A9E19F2A6CD00F49389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F398AA019F2A6CD00F49389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F398AA119F2A6CD00F49389 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F398AA319F2A6CD00F49389 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F398AA419F2A6CD00F49389 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F398AA719F2A6CD00F49389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F398AA919F2A6CD00F49389 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F398AAC19F2A6CD00F49389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0F398AB219F2A6CD00F49389 /* TCLocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCLocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F398AB719F2A6CD00F49389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F398AB819F2A6CD00F49389 /* TCLocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLocationDemoTests.m; sourceTree = "<group>"; };
+		0F398AC719F2A9A200F49389 /* ENSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ENSDK.framework; sourceTree = "<group>"; };
+		0F398AC819F2A9A200F49389 /* ENSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ENSDKResources.bundle; sourceTree = "<group>"; };
+		0F398ACB19F2A9BC00F49389 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0F398ACD19F2AA4800F49389 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0F398ACF19F2AF1A00F49389 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Login/LoginViewController.h; sourceTree = "<group>"; };
+		0F398AD019F2AF1A00F49389 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Login/LoginViewController.m; sourceTree = "<group>"; };
+		0F398AD619F2B67600F49389 /* TripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripViewController.h; path = Trip/TripViewController.h; sourceTree = "<group>"; };
+		0F398AD719F2B67600F49389 /* TripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TripViewController.m; path = Trip/TripViewController.m; sourceTree = "<group>"; };
+		0F398ADA19F2CCBD00F49389 /* LocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationTableViewCell.h; path = Cells/LocationTableViewCell.h; sourceTree = "<group>"; };
+		0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationTableViewCell.m; path = Cells/LocationTableViewCell.m; sourceTree = "<group>"; };
+		0F398ADE19F2E7E000F49389 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F05DAB819F308B8005282B2 /* MapKit.framework in Frameworks */,
+				0F398ADF19F2E7E000F49389 /* CoreLocation.framework in Frameworks */,
+				0F398ACE19F2AA4800F49389 /* libxml2.dylib in Frameworks */,
+				0F398ACC19F2A9BC00F49389 /* MobileCoreServices.framework in Frameworks */,
+				0F398AC919F2A9A200F49389 /* ENSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F05DAB619F30889005282B2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0F05DAB319F30884005282B2 /* MapViewController.h */,
+				0F05DAB419F30884005282B2 /* MapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		0F398A9019F2A6CD00F49389 = {
 			isa = PBXGroup;
 			children = (
+				0F05DAB719F308B8005282B2 /* MapKit.framework */,
+				0F398ADE19F2E7E000F49389 /* CoreLocation.framework */,
 				0F398A9B19F2A6CD00F49389 /* TCLocationDemo */,
 				0F398AB519F2A6CD00F49389 /* TCLocationDemoTests */,
 				0F398A9A19F2A6CD00F49389 /* Products */,
+				0F398ACD19F2AA4800F49389 /* libxml2.dylib */,
+				0F398ACB19F2A9BC00F49389 /* MobileCoreServices.framework */,
+				0F398AC719F2A9A200F49389 /* ENSDK.framework */,
+				0F398AC819F2A9A200F49389 /* ENSDKResources.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +124,14 @@
 			children = (
 				0F398AA019F2A6CD00F49389 /* AppDelegate.h */,
 				0F398AA119F2A6CD00F49389 /* AppDelegate.m */,
-				0F398AA319F2A6CD00F49389 /* ViewController.h */,
-				0F398AA419F2A6CD00F49389 /* ViewController.m */,
 				0F398AA619F2A6CD00F49389 /* Main.storyboard */,
 				0F398AA919F2A6CD00F49389 /* Images.xcassets */,
 				0F398AAB19F2A6CD00F49389 /* LaunchScreen.xib */,
 				0F398A9C19F2A6CD00F49389 /* Supporting Files */,
+				0F398AD219F2AF1D00F49389 /* Login */,
+				0F398AD919F2B68200F49389 /* Trip */,
+				0F398ADD19F2CCC000F49389 /* Cells */,
+				0F05DAB619F30889005282B2 /* Map */,
 			);
 			path = TCLocationDemo;
 			sourceTree = "<group>";
@@ -117,6 +160,33 @@
 				0F398AB719F2A6CD00F49389 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F398AD219F2AF1D00F49389 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0F398ACF19F2AF1A00F49389 /* LoginViewController.h */,
+				0F398AD019F2AF1A00F49389 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0F398AD919F2B68200F49389 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				0F398AD619F2B67600F49389 /* TripViewController.h */,
+				0F398AD719F2B67600F49389 /* TripViewController.m */,
+			);
+			name = Trip;
+			sourceTree = "<group>";
+		};
+		0F398ADD19F2CCC000F49389 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F398ADA19F2CCBD00F49389 /* LocationTableViewCell.h */,
+				0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F398AA819F2A6CD00F49389 /* Main.storyboard in Resources */,
+				0F398ACA19F2A9A200F49389 /* ENSDKResources.bundle in Resources */,
 				0F398AAD19F2A6CD00F49389 /* LaunchScreen.xib in Resources */,
 				0F398AAA19F2A6CD00F49389 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F398AA519F2A6CD00F49389 /* ViewController.m in Sources */,
 				0F398AA219F2A6CD00F49389 /* AppDelegate.m in Sources */,
+				0F398AD819F2B67600F49389 /* TripViewController.m in Sources */,
+				0F398ADC19F2CCBD00F49389 /* LocationTableViewCell.m in Sources */,
+				0F05DAB519F30884005282B2 /* MapViewController.m in Sources */,
 				0F398A9F19F2A6CD00F49389 /* main.m in Sources */,
+				0F398AD119F2AF1A00F49389 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +419,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TCLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TCLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +496,7 @@
 				0F398ABE19F2A6CD00F49389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F398ABF19F2A6CD00F49389 /* Build configuration list for PBXNativeTarget "TCLocationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +505,7 @@
 				0F398AC119F2A6CD00F49389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

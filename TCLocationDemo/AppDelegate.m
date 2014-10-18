@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <ENSDK/ENSDK.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +17,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UITabBar appearance] setClipsToBounds:YES];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    // Initial development is done on the sandbox service
+    // When you want to connect to production, just pass "nil" for "optionalHost"
+    NSString *SANDBOX_HOST = ENSessionHostSandbox;
+    
+    // Fill in the consumer key and secret with the values that you received from Evernote
+    // To get an API key, visit http://dev.evernote.com/documentation/cloud/
+    NSString *CONSUMER_KEY = @"houbenkristof-7667";
+    NSString *CONSUMER_SECRET = @"9f939b7333a42712";
+    
+    [ENSession setSharedSessionConsumerKey:CONSUMER_KEY
+                            consumerSecret:CONSUMER_SECRET
+                              optionalHost:SANDBOX_HOST];
+    
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL didHandle = [[ENSession sharedSession] handleOpenURL:url];
+    return didHandle;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ROFL"
+                                                    message:@"Dee dee doo doo."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

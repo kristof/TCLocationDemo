@@ -42,7 +42,7 @@
 		0F05DAB719F308B8005282B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0F05DAB919F33297005282B2 /* OverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverviewViewController.h; path = Overview/OverviewViewController.h; sourceTree = "<group>"; };
 		0F05DABA19F33297005282B2 /* OverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverviewViewController.m; path = Overview/OverviewViewController.m; sourceTree = "<group>"; };
-		0F398A9919F2A6CD00F49389 /* TCLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F398A9919F2A6CD00F49389 /* Travelnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelnote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F398A9D19F2A6CD00F49389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F398A9E19F2A6CD00F49389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F398AA019F2A6CD00F49389 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		0F398A9A19F2A6CD00F49389 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F398A9919F2A6CD00F49389 /* TCLocationDemo.app */,
+				0F398A9919F2A6CD00F49389 /* Travelnote.app */,
 				0F398AB219F2A6CD00F49389 /* TCLocationDemoTests.xctest */,
 			);
 			name = Products;
@@ -219,7 +219,7 @@
 			);
 			name = TCLocationDemo;
 			productName = TCLocationDemo;
-			productReference = 0F398A9919F2A6CD00F49389 /* TCLocationDemo.app */;
+			productReference = 0F398A9919F2A6CD00F49389 /* Travelnote.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0F398AB119F2A6CD00F49389 /* TCLocationDemoTests */ = {
@@ -439,7 +439,7 @@
 				);
 				INFOPLIST_FILE = TCLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Travelnote;
 			};
 			name = Debug;
 		};
@@ -453,7 +453,7 @@
 				);
 				INFOPLIST_FILE = TCLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Travelnote;
 			};
 			name = Release;
 		};

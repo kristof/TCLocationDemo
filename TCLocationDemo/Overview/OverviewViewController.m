@@ -30,6 +30,8 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    self.navigationItem.hidesBackButton = YES;
+    
     // Initialize Refresh Control
     self.refreshControl = [[UIRefreshControl alloc] init];
     self.refreshControl.tintColor = [UIColor lightGrayColor];

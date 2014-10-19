@@ -20,6 +20,9 @@
     
     self.loginButton.layer.cornerRadius = 6;
     
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    
     if ([[ENSession sharedSession] isAuthenticated]) {
         //[self performSegueWithIdentifier: @"LoginSegue" sender: self];
     }

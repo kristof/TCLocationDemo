@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F05DAB519F30884005282B2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F05DAB419F30884005282B2 /* MapViewController.m */; };
 		0F05DAB819F308B8005282B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F05DAB719F308B8005282B2 /* MapKit.framework */; };
+		0F05DABB19F33297005282B2 /* OverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F05DABA19F33297005282B2 /* OverviewViewController.m */; };
 		0F398A9F19F2A6CD00F49389 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398A9E19F2A6CD00F49389 /* main.m */; };
 		0F398AA219F2A6CD00F49389 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AA119F2A6CD00F49389 /* AppDelegate.m */; };
 		0F398AA819F2A6CD00F49389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F398AA619F2A6CD00F49389 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		0F05DAB319F30884005282B2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Map/MapViewController.h; sourceTree = "<group>"; };
 		0F05DAB419F30884005282B2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Map/MapViewController.m; sourceTree = "<group>"; };
 		0F05DAB719F308B8005282B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0F05DAB919F33297005282B2 /* OverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverviewViewController.h; path = Overview/OverviewViewController.h; sourceTree = "<group>"; };
+		0F05DABA19F33297005282B2 /* OverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverviewViewController.m; path = Overview/OverviewViewController.m; sourceTree = "<group>"; };
 		0F398A9919F2A6CD00F49389 /* TCLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F398A9D19F2A6CD00F49389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F398A9E19F2A6CD00F49389 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,15 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		0F05DABC19F3329B005282B2 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				0F05DAB919F33297005282B2 /* OverviewViewController.h */,
+				0F05DABA19F33297005282B2 /* OverviewViewController.m */,
+			);
+			name = Overview;
+			sourceTree = "<group>";
+		};
 		0F398A9019F2A6CD00F49389 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 				0F398AD919F2B68200F49389 /* Trip */,
 				0F398ADD19F2CCC000F49389 /* Cells */,
 				0F05DAB619F30889005282B2 /* Map */,
+				0F05DABC19F3329B005282B2 /* Overview */,
 			);
 			path = TCLocationDemo;
 			sourceTree = "<group>";
@@ -291,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F398AA219F2A6CD00F49389 /* AppDelegate.m in Sources */,
+				0F05DABB19F33297005282B2 /* OverviewViewController.m in Sources */,
 				0F398AD819F2B67600F49389 /* TripViewController.m in Sources */,
 				0F398ADC19F2CCBD00F49389 /* LocationTableViewCell.m in Sources */,
 				0F05DAB519F30884005282B2 /* MapViewController.m in Sources */,

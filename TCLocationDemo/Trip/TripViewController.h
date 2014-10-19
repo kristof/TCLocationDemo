@@ -19,5 +19,9 @@
 @property (nonatomic, strong) CLCircularRegion *someRegion;
 
 @property (nonatomic, strong) NSMutableArray *locations;
+@property (nonatomic, strong) NSMutableDictionary *notebook;
+
+
+- (IBAction)openMap:(id)sender;
 
 @end

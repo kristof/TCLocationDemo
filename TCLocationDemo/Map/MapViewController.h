@@ -16,4 +16,6 @@
 @property (nonatomic, strong) NSArray *findNotesResults;
 @property (nonatomic, strong) NSMutableArray *locations;
 
+- (IBAction)closeModal:(id)sender;
+
 @end

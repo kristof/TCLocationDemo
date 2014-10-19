@@ -10,6 +10,7 @@
 #import <ENSDK/ENSDK.h>
 #import <ENSDK/Advanced/ENSDKAdvanced.h>
 #import "LocationTableViewCell.h"
+#import "MapViewController.h"
 
 @interface TripViewController ()
 
@@ -36,6 +37,8 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self findTripLocations];
+    
+    self.title = [self.notebook valueForKey:@"Name"];
     
     
     // Location manager
@@ -89,7 +92,7 @@
             NSLog(@"No trips");
         }else{
             [[ENSession sharedSession] findNotesWithSearch:nil
-                                                inNotebook:notebooks[0]
+                                                inNotebook:(ENNotebook *)[self.notebook objectForKey:@"Object"]
                                                    orScope:ENSessionSearchScopeNone
                                                  sortOrder:ENSessionSortOrderRecentlyCreated
                                                 maxResults:0
@@ -192,5 +195,16 @@
     [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"MapSegue"])
+    {
+        MapViewController *mapViewController = (MapViewController *)[[segue destinationViewController] topViewController];
+        mapViewController.locations = self.locations;
+    }
+}
 
+- (IBAction)openMap:(id)sender {
+    [self performSegueWithIdentifier:@"MapSegue" sender:sender];
+}
 @end

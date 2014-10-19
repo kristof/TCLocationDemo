@@ -18,8 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.loginButton.layer.cornerRadius = 6;
+    
     if ([[ENSession sharedSession] isAuthenticated]) {
-        [self performSegueWithIdentifier: @"LoginSegue" sender: self];
+        //[self performSegueWithIdentifier: @"LoginSegue" sender: self];
     }
 
 }

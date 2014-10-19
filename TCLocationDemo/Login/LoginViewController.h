@@ -10,8 +10,7 @@
 
 @interface LoginViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginButton;
-
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 - (IBAction)loginWithEvernote:(id)sender;
 
 @end

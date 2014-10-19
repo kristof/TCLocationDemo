@@ -1,4 +1,4 @@
-TravelBook
+TravelNote
 ==============
 
 TechCrunch hackathon project — Plan a trip using evernote.

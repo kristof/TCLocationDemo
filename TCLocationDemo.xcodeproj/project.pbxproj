@@ -24,6 +24,7 @@
 		0F398AD819F2B67600F49389 /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398AD719F2B67600F49389 /* TripViewController.m */; };
 		0F398ADC19F2CCBD00F49389 /* LocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */; };
 		0F398ADF19F2E7E000F49389 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F398ADE19F2E7E000F49389 /* CoreLocation.framework */; };
+		0FD9DB3E19F355B800FE5EE5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD9DB3D19F355B800FE5EE5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		0F398ADA19F2CCBD00F49389 /* LocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationTableViewCell.h; path = Cells/LocationTableViewCell.h; sourceTree = "<group>"; };
 		0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationTableViewCell.m; path = Cells/LocationTableViewCell.m; sourceTree = "<group>"; };
 		0F398ADE19F2E7E000F49389 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0FD9DB3C19F355B800FE5EE5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Detail/DetailViewController.h; sourceTree = "<group>"; };
+		0FD9DB3D19F355B800FE5EE5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Detail/DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 				0F398ADD19F2CCC000F49389 /* Cells */,
 				0F05DAB619F30889005282B2 /* Map */,
 				0F05DABC19F3329B005282B2 /* Overview */,
+				0FD9DB3F19F355BB00FE5EE5 /* Detail */,
 			);
 			path = TCLocationDemo;
 			sourceTree = "<group>";
@@ -200,6 +204,15 @@
 				0F398ADB19F2CCBD00F49389 /* LocationTableViewCell.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		0FD9DB3F19F355BB00FE5EE5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0FD9DB3C19F355B800FE5EE5 /* DetailViewController.h */,
+				0FD9DB3D19F355B800FE5EE5 /* DetailViewController.m */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +319,7 @@
 				0F398AA219F2A6CD00F49389 /* AppDelegate.m in Sources */,
 				0F05DABB19F33297005282B2 /* OverviewViewController.m in Sources */,
 				0F398AD819F2B67600F49389 /* TripViewController.m in Sources */,
+				0FD9DB3E19F355B800FE5EE5 /* DetailViewController.m in Sources */,
 				0F398ADC19F2CCBD00F49389 /* LocationTableViewCell.m in Sources */,
 				0F05DAB519F30884005282B2 /* MapViewController.m in Sources */,
 				0F398A9F19F2A6CD00F49389 /* main.m in Sources */,

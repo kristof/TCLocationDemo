@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="136"/>
+            <point key="canvasLocation" x="1587" y="144"/>
         </scene>
         <!--Map View-->
         <scene sceneID="JDe-Ft-cat">
@@ -137,11 +137,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="3BA-Xy-oSi" id="5WW-oy-lUt"/>
+                        <segue destination="L2W-LQ-ZgS" kind="show" identifier="MapDetailSegue" id="Apt-e8-6VH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MhP-bj-gVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5688" y="144"/>
+            <point key="canvasLocation" x="4726" y="-836"/>
         </scene>
         <!--My Trips-->
         <scene sceneID="ece-sv-qji">
@@ -223,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="av7-n8-CvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342" y="136"/>
+            <point key="canvasLocation" x="2254" y="144"/>
         </scene>
         <!--Trip to London-->
         <scene sceneID="iMl-yU-6FX">
@@ -282,6 +283,7 @@
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="uDI-XF-bN4" id="f19-SO-vy7"/>
+                                            <segue destination="L2W-LQ-ZgS" kind="show" identifier="DetailSegue" id="pP8-Wh-0eo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -315,7 +317,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="po1-As-LSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4074" y="136"/>
+            <point key="canvasLocation" x="3074" y="144"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="p7j-K2-iid">
+            <objects>
+                <viewController title="Detail" id="L2W-LQ-ZgS" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hQU-rK-koX"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ai-ea-Hcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jrm-aO-pMd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-17-zjk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L2W-LQ-ZgS" id="UtD-SY-gmC"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Ai-ea-Hcp" firstAttribute="top" secondItem="kC1-17-zjk" secondAttribute="bottom" id="OKU-aX-AEG"/>
+                            <constraint firstAttribute="trailing" secondItem="kC1-17-zjk" secondAttribute="trailing" id="SYN-p5-oN4"/>
+                            <constraint firstItem="kC1-17-zjk" firstAttribute="leading" secondItem="Jrm-aO-pMd" secondAttribute="leading" id="TzS-yU-yQM"/>
+                            <constraint firstItem="kC1-17-zjk" firstAttribute="top" secondItem="hQU-rK-koX" secondAttribute="bottom" id="UtO-kL-Tai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="kC1-17-zjk" id="hXs-QQ-MN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOu-ex-z4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4792" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4ze-le-ual">
@@ -360,11 +398,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhL-79-7j8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4850" y="136"/>
+            <point key="canvasLocation" x="3922" y="-776"/>
         </scene>
     </scenes>
     <resources>
         <image name="chevron" width="12" height="20"/>
         <image name="evernote" width="77" height="90"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Apt-e8-6VH"/>
+    </inferredMetricsTieBreakers>
 </document>

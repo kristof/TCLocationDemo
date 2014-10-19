@@ -11,6 +11,7 @@
 #import <ENSDK/Advanced/ENSDKAdvanced.h>
 #import "LocationTableViewCell.h"
 #import "MapViewController.h"
+#import "DetailViewController.h"
 
 @interface TripViewController ()
 
@@ -124,6 +125,7 @@
                                                                 [locationDict setObject:note.attributes.latitude forKey:@"Latitude"];
                                                                 [locationDict setObject:note.attributes.longitude forKey:@"Longitude"];
                                                                 [locationDict setObject:note.created forKey:@"Created"];
+                                                                [locationDict setObject:(ENNoteRef *)result.noteRef forKey:@"NoteRef"];
                                                                 [self.locations addObject:locationDict];
                                                                 
                                                                 if (findNotesResults.count == self.locations.count) {
@@ -152,7 +154,7 @@
 - (void) setupLocationManager {
     for (id location in self.locations) {
         CLLocationDistance radius = 1000; //1KM
-        CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake([[location objectForKey:@"Latitude"] doubleValue], [[location objectForKey:@"Longitude"] doubleValue]) radius:radius identifier:@"Tower Bridge"];
+        CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake([[location objectForKey:@"Latitude"] doubleValue], [[location objectForKey:@"Longitude"] doubleValue]) radius:radius identifier:@""];
         [self.locationManager startMonitoringForRegion:region];
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = 100;
@@ -201,6 +203,14 @@
     {
         MapViewController *mapViewController = (MapViewController *)[[segue destinationViewController] topViewController];
         mapViewController.locations = self.locations;
+    }
+    
+    if ([[segue identifier] isEqualToString:@"DetailSegue"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *detailViewController = [segue destinationViewController];
+        detailViewController.noteTitle = [self.locations[indexPath.row] objectForKey:@"Title"];
+        detailViewController.noteRef = [self.locations[indexPath.row] objectForKey:@"NoteRef"];
     }
 }
 

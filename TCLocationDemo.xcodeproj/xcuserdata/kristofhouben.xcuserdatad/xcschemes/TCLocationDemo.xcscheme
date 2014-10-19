@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F398A9819F2A6CD00F49389"
-               BuildableName = "TCLocationDemo.app"
+               BuildableName = "Travelnote.app"
                BlueprintName = "TCLocationDemo"
                ReferencedContainer = "container:TCLocationDemo.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F398A9819F2A6CD00F49389"
-            BuildableName = "TCLocationDemo.app"
+            BuildableName = "Travelnote.app"
             BlueprintName = "TCLocationDemo"
             ReferencedContainer = "container:TCLocationDemo.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F398A9819F2A6CD00F49389"
-            BuildableName = "TCLocationDemo.app"
+            BuildableName = "Travelnote.app"
             BlueprintName = "TCLocationDemo"
             ReferencedContainer = "container:TCLocationDemo.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F398A9819F2A6CD00F49389"
-            BuildableName = "TCLocationDemo.app"
+            BuildableName = "Travelnote.app"
             BlueprintName = "TCLocationDemo"
             ReferencedContainer = "container:TCLocationDemo.xcodeproj">
          </BuildableReference>

@@ -94,6 +94,7 @@
         if (notebooks == 0) {
             NSLog(@"No trips");
         }else{
+            NSLog(@"notebooks");
             for (id notebook in notebooks) {
                 ENNotebook *noteObject = (ENNotebook *)notebook;
                 NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];

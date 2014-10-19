@@ -173,7 +173,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-nx-hQD">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="Jvr-GS-djf"/>
                                                     </constraints>
@@ -214,7 +214,9 @@
                             <constraint firstItem="xqw-9d-8mE" firstAttribute="top" secondItem="dod-Ox-oE0" secondAttribute="bottom" id="ot1-Ot-9g9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Trips" id="hhf-m7-RPX"/>
+                    <navigationItem key="navigationItem" title="My Trips" id="hhf-m7-RPX">
+                        <barButtonItem key="backBarButtonItem" title=" " id="SeT-mY-dkG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="dod-Ox-oE0" id="g15-xj-dKH"/>
                     </connections>
@@ -255,15 +257,20 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3h-DN-OVX">
                                                     <rect key="frame" x="0.0" y="79" width="600" height="1"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="eqK-nD-qAo"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-wT-cEP">
+                                                    <rect key="frame" x="569" y="30" width="12" height="20"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="uDI-XF-bN4" secondAttribute="trailing" constant="4" id="1VZ-Hd-sdW"/>
+                                                <constraint firstAttribute="centerY" secondItem="dX1-wT-cEP" secondAttribute="centerY" id="BOD-41-xqU"/>
                                                 <constraint firstItem="r3h-DN-OVX" firstAttribute="leading" secondItem="re6-Gi-9XF" secondAttribute="leadingMargin" constant="-8" id="KhK-hH-bCz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dX1-wT-cEP" secondAttribute="trailing" constant="11" id="LAO-Jf-4ws"/>
                                                 <constraint firstAttribute="centerY" secondItem="uDI-XF-bN4" secondAttribute="centerY" constant="1" id="arR-XW-h5D"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="r3h-DN-OVX" secondAttribute="bottom" constant="-8.5" id="mey-HV-MEV"/>
                                                 <constraint firstItem="uDI-XF-bN4" firstAttribute="leading" secondItem="re6-Gi-9XF" secondAttribute="leadingMargin" constant="7" id="srO-Ri-HR1"/>
@@ -293,6 +300,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trip to London" id="Zjz-4c-wOK">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ho2-DI-0SI"/>
                         <barButtonItem key="rightBarButtonItem" title="Map" id="NOv-Ux-Cm0">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
